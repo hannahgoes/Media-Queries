@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Media Query</title>
+</head>
+<style>
+    .container{
+        margin: auto;
+        background-color: rgb(237, 220, 245);
+        box-sizing: border-box;
+    }
+
+    /*Dimensões para mobile*/
+    @media screen and (max-width: 767px ) {
+        .container{
+            background-color: chartreuse;
+        }
+    }
+
+    /*Dimensões para tablet*/
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .container{
+            background-color: rgb(20, 197, 220);
+        }
+    }
+
+    /*Dimensões para desktops*/
+    @media screen and (min-width: 1024px) {
+        .container{
+            background-color: deeppink;
+        }
+    }
+    /*Dimensões para desktops de alta resolução*/
+    @media screen and (min-width: 1280px) {
+        .container{
+            background-color: darkorange;
+        }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <p>
+            Texto no parágrafo
+        </p>
+    </div>
+</body>
+</html>
